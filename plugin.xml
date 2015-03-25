@@ -4,7 +4,7 @@
            id="com.imran.getuserinfo"
       version="1.0.0">
     <name>UserDetails</name>
-    <description>Plugin to Get user details</description>
+    <description>Plugin to Get user details like user's primary email address associated with google, and primary mobile number</description>
     <license>MIT</license>
     <keywords>phonegap,user email, user details, phonenumber</keywords>
  
