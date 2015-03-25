@@ -38,8 +38,7 @@ function User() {
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
 User.prototype.getInfo = function(successCallback, errorCallback) {
-    alert("cammm");
-    argscheck.checkArgs('fF', 'User.getInfo', arguments);
+    argscheck.checkArgs('user', 'User.getInfo', arguments);
     exec(successCallback, errorCallback, "User", "getuserinfo", []);
 };
 
