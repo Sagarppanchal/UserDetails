@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.imran.getuserinfo"
+      version="1.0.0">
+    <name>UserDetails</name>
+    <description>Plugin to Get user details</description>
+    <license>MIT</license>
+    <keywords>phonegap,user email, user details, phonenumber</keywords>
+ 
+ 
+    <js-module src="www/user.js" name="user">
+        <clobbers target="user" />
+    </js-module>
+ 
+ 
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="User">
+                <param name="android-package" value="com.imran.getuserinfo.User"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml"  parent="/*">
+             <uses-permission android:name="android.permission.READ_PROFILE" />
+             <uses-permission android:name="android.permission.READ_CONTACTS" />
+             <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+         </config-file>
+
+ 
+        <source-file src="src/android/User.java" target-dir="src/com/imran/getuserinfo" />      
+     </platform>    
+</plugin>
