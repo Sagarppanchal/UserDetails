@@ -5,4 +5,5 @@ PhoneGap plugin to get User details like Primary Email id and Mobile Number in A
 Usage :
 
  user.email // this will return user's primary id.
- user.number // this will retun user's mobile number
+ 
+ user.number // this will retun user's mobile number.
